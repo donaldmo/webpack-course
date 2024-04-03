@@ -1,7 +1,17 @@
+// import getClasses from "./getClasses";
+
+// getClasses();
+
 const elvenShieldRecipe = {
-    leatherStrips: 2,
-    ironIgnot: 1,
-    refinedMoostone: 4
+  leatherStrips: 2,
+  ironIngot: 1,
+  refinedMoonstone: 4,
 };
 
-console.log(elvenShieldRecipe);
+// ES7 Object spread example
+const elvenGauntletsRecipe = {
+  ...elvenShieldRecipe,
+  leather: 1,
+  refinedMoonstone: 1,
+};
+console.log("ES7 Object spread example: ", elvenGauntletsRecipe);

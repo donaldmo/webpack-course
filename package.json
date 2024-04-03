@@ -1,28 +1,23 @@
 {
-  "name": "webpack-course",
+  "name": "webpack-starters",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
+  "description": "A collection of different Webpack setups for quick referencing or starting from",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack serve",
     "watch": "webpack --watch",
-    "build": "webpack"
+    "build": "NODE_ENV=production webpack",
+    "build-dev": "webpack"
   },
-  "devDependencies": {
-    "webpack": "^5.16.0",
-    "webpack-cli": "^4.4.0", 
-    "webpack-dev-server": "5.0.4"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/donaldmo/webpack-course.git"
-  },
-  "keywords": [],
-  "author": "",
+  "author": "Jimmy DC",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/donaldmo/webpack-course/issues"
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "babel-loader": "^8.2.2",
+    "webpack": "^5.11.1",
+    "webpack-cli": "^4.3.0",
+    "webpack-dev-server": "^3.11.0"
   },
-  "homepage": "https://github.com/donaldmo/webpack-course#readme"
+  "dependencies": {}
 }
